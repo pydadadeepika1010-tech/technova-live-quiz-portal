@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        WOMEN'S TECHNOVA 2K26 - Tech Quiz | Aditya Degree College For Women
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="styles.css"
+    >
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+
+
+<body onclick="unlockAudio()">
+
+<div class="container">
+
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+
+    <header
+        id="main-header"
+        class="college-header"
+    >
+
+        <div
+            style="
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                gap:20px;
+                flex-wrap:wrap;
+            "
+        >
+
+            <div class="logo-wrapper">
+
+                <img
+                    src="aditya_logo.png"
+                    alt="Aditya Degree College Logo"
+                    class="official-logo"
+                >
+
+            </div>
+
+
+            <div style="text-align:left;">
+
+                <h1 class="college-name">
+                    ADITYA DEGREE COLLEGE FOR WOMEN
+                </h1>
+
+                <p class="college-sub">
+                    RAMNAGAR, VISAKHAPATNAM — DEPARTMENT OF COMPUTER SCIENCE
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <h2 class="technova-title">
+            ⚡ WOMEN'S TECHNOVA 2K26 ⚡
+        </h2>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         VIEW 1 — WELCOME
+    ========================================================== -->
+
+    <section
+        id="view-welcome"
+        class="view-section active"
+    >
+
+        <div
+            class="glass-card"
+            style="
+                text-align:center;
+                padding:40px 30px;
+            "
+        >
+
+            <div
+                style="
+                    font-size:4rem;
+                    margin-bottom:10px;
+                "
+            >
+                🌴 🐒 🎯 💻
+            </div>
+
+
+            <h2
+                style="
+                    font-family:'Orbitron',sans-serif;
+                    font-size:2.8rem;
+                    color:var(--neon-pink);
+                    margin:15px 0;
+                "
+            >
+                TECH QUIZ 2026
+            </h2>
+
+
+            <p
+                style="
+                    font-size:1.5rem;
+                    color:var(--neon-cyan);
+                    margin-bottom:25px;
+                    font-weight:600;
+                "
+            >
+                "THINK | CODE | BUILD | EXPLORE — THE ULTIMATE FUN TECH SHOWDOWN FOR 1ST YEAR STUDENTS!"
+            </p>
+
+
+            <div class="fun-banner">
+
+                <span>
+                    😎 <b>No Stress, Pure Fun!</b>
+                    Test your knowledge, win prizes,
+                    and enjoy the biggest event in Aditya Women's College! 🚀
+                </span>
+
+            </div>
+
+
+            <div style="margin-bottom:30px;">
+
+                <span class="round-badge">
+                    📅 Date: <b>6th OCT (Tuesday)</b>
+                </span>
+
+                <span class="round-badge">
+                    👥 Team Size: <b>3 Members</b>
+                </span>
+
+                <span class="round-badge">
+                    🎓 <b>1st Year Students Only</b>
+                </span>
+
+            </div>
+
+
+            <button
+                class="btn-primary"
+                onclick="switchView('view-rules')"
+            >
+                ENTER EVENT & VIEW RULES ➔
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         VIEW 2 — GENERAL RULES
+    ========================================================== -->
+
+    <section
+        id="view-rules"
+        class="view-section"
+    >
+
+        <div class="glass-card">
+
+            <div
+                style="
+                    display:flex;
+                    justify-content:space-between;
+                    align-items:center;
+                    margin-bottom:20px;
+                    gap:15px;
+                    flex-wrap:wrap;
+                "
+            >
+
+                <h2
+                    style="
+                        font-family:'Orbitron',sans-serif;
+                        font-size:2.2rem;
+                        color:var(--neon-cyan);
+                    "
+                >
+                    📋 GENERAL QUIZ RULES
+                </h2>
+
+
+                <button
+                    class="btn-primary btn-pink btn-small"
+                    onclick="switchView('view-welcome')"
+                >
+                    ⬅ BACK TO HOME
+                </button>
+
+            </div>
+
+
+            <ul class="rules-list">
+
+                <li>
+                    📱 <b>NO MOBILE PHONES ALLOWED:</b>
+                    Keep phones away! Use pure brainpower! 🧠
+                </li>
+
+                <li>
+                    👥 <b>STRICTLY TEAM DISCUSSION ONLY:</b>
+                    3 members per team. No assistance from outside audience or friends.
+                </li>
+
+                <li>
+                    🎯 <b>SCORING:</b>
+                    Scores are maintained manually by the quiz coordinator.
+                </li>
+
+                <li>
+                    🔄 <b>PASSING RULE:</b>
+                    A question can only be passed if the main team refrains from answering.
+                </li>
+
+                <li>
+                    🏆 <b>ROUND 1:</b>
+                    275 questions with 4 multiple-choice options.
+                </li>
+
+                <li>
+                    🔥 <b>ROUND 2:</b>
+                    200 questions with 4 multiple-choice options.
+                </li>
+
+                <li>
+                    👁️ <b>ROUND 3:</b>
+                    100 questions.
+                    Options are hidden initially.
+                </li>
+
+                <li>
+                    ⭐ <b>ROUND 3 SCORING:</b>
+                    Direct correct answer = 3 marks.
+                    After showing options and answering correctly = 2 marks.
+                    Wrong answer = 0 marks.
+                </li>
+
+            </ul>
+
+
+            <div
+                style="
+                    text-align:center;
+                    margin-top:30px;
+                "
+            >
+
+                <button
+                    class="btn-primary"
+                    onclick="switchView('view-rounds')"
+                >
+                    PROCEED TO ROUND SELECTION ➔
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         VIEW 3 — ROUND SELECTION
+    ========================================================== -->
+
+    <section
+        id="view-rounds"
+        class="view-section"
+    >
+
+        <div
+            style="
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                margin-bottom:25px;
+                gap:15px;
+                flex-wrap:wrap;
+            "
+        >
+
+            <h2
+                style="
+                    font-family:'Orbitron',sans-serif;
+                    font-size:2.2rem;
+                    color:#fff;
+                "
+            >
+                SELECT COMPETITION ROUND
+            </h2>
+
+
+            <button
+                class="btn-primary btn-pink btn-small"
+                onclick="switchView('view-rules')"
+            >
+                ⬅ BACK TO GENERAL RULES
+            </button>
+
+        </div>
+
+
+
+        <div class="rounds-grid">
+
+
+            <!-- =================================================
+                 ROUND 1
+            ================================================== -->
+
+            <div
+                class="round-card"
+                onclick="startRound(1)"
+            >
+
+                <div class="round-number">
+                    ROUND 01
+                </div>
+
+
+                <div class="round-title">
+                    SPEED & FOUNDATION
+                </div>
+
+
+                <div>
+
+                    <span class="round-badge">
+                        275 Questions
+                    </span>
+
+                    <span class="round-badge">
+                        ⏱️ 30 Seconds
+                    </span>
+
+                    <span class="round-badge">
+                        4 Options
+                    </span>
+
+                </div>
+
+
+                <p
+                    style="
+                        margin-top:15px;
+                        color:var(--text-muted);
+                    "
+                >
+                    Very easy and basic technical questions.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ROUND 2
+            ================================================== -->
+
+            <div
+                class="round-card"
+                onclick="startRound(2)"
+            >
+
+                <div
+                    class="round-number"
+                    style="color:var(--neon-cyan);"
+                >
+                    ROUND 02
+                </div>
+
+
+                <div class="round-title">
+                    CONCEPTUAL MASTERY
+                </div>
+
+
+                <div>
+
+                    <span class="round-badge">
+                        200 Questions
+                    </span>
+
+                    <span class="round-badge">
+                        ⏱️ 45 Seconds
+                    </span>
+
+                    <span class="round-badge">
+                        4 Options
+                    </span>
+
+                </div>
+
+
+                <p
+                    style="
+                        margin-top:15px;
+                        color:var(--text-muted);
+                    "
+                >
+                    Medium-level programming,
+                    databases, networking and technology.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 ROUND 3
+            ================================================== -->
+
+            <div
+                class="round-card"
+                onclick="startRound(3)"
+            >
+
+                <div
+                    class="round-number"
+                    style="color:var(--neon-gold);"
+                >
+                    ROUND 03
+                </div>
+
+
+                <div class="round-title">
+                    CHALLENGE MODE
+                </div>
+
+
+                <div>
+
+                    <span class="round-badge">
+                        100 Questions
+                    </span>
+
+                    <span class="round-badge">
+                        ⏱️ 60 Seconds
+                    </span>
+
+                    <span
+                        class="round-badge"
+                        style="
+                            background:rgba(255,0,127,0.2);
+                            color:var(--neon-pink);
+                        "
+                    >
+                        🔒 HIDDEN OPTIONS
+                    </span>
+
+                </div>
+
+
+                <p
+                    style="
+                        margin-top:15px;
+                        color:var(--text-muted);
+                    "
+                >
+                    Advanced challenge.
+                    Answer directly for 3 marks,
+                    or reveal options for 2 marks.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         VIEW 4 — ROUND RULES
+    ========================================================== -->
+
+    <section
+        id="view-round-rules"
+        class="view-section"
+    >
+
+        <div
+            class="glass-card"
+            style="text-align:center;"
+        >
+
+            <h2
+                id="round-rules-title"
+                style="
+                    font-family:'Orbitron',sans-serif;
+                    font-size:2.2rem;
+                    color:var(--neon-pink);
+                    margin-bottom:15px;
+                "
+            >
+                ROUND RULES
+            </h2>
+
+
+            <div
+                id="round-rules-body"
+                style="
+                    font-size:1.4rem;
+                    line-height:1.8;
+                    color:#e2e8f0;
+                    margin:25px 0;
+                "
+            >
+            </div>
+
+
+            <div
+                style="
+                    display:flex;
+                    justify-content:center;
+                    gap:15px;
+                    margin-top:20px;
+                    flex-wrap:wrap;
+                "
+            >
+
+                <button
+                    class="btn-primary btn-pink"
+                    onclick="switchView('view-rounds')"
+                >
+                    ⬅ BACK TO ROUNDS
+                </button>
+
+
+                <button
+                    class="btn-primary"
+                    onclick="openGrid()"
+                >
+                    ENTER QUESTION GRID ➔
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         VIEW 5 — QUESTION GRID
+    ========================================================== -->
+
+    <section
+        id="view-grid"
+        class="view-section"
+    >
+
+        <div
+            style="
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                margin-bottom:15px;
+                flex-wrap:wrap;
+                gap:10px;
+            "
+        >
+
+            <h2
+                id="grid-header-title"
+                style="
+                    font-family:'Orbitron',sans-serif;
+                    font-size:1.8rem;
+                    color:var(--neon-cyan);
+                "
+            >
+                ROUND 1 - SELECT A QUESTION NUMBER
+            </h2>
+
+
+            <div
+                style="
+                    display:flex;
+                    gap:15px;
+                    font-size:1.1rem;
+                    font-weight:700;
+                "
+            >
+
+                <span style="color:var(--neon-green);">
+                    🟩 CORRECT
+                </span>
+
+                <span style="color:var(--neon-red);">
+                    🟥 WRONG
+                </span>
+
+            </div>
+
+
+            <button
+                class="btn-primary btn-pink btn-small"
+                onclick="switchView('view-rounds')"
+            >
+                ⬅ BACK TO ROUNDS
+            </button>
+
+        </div>
+
+
+        <p
+            style="
+                color:var(--text-muted);
+                font-size:1.1rem;
+                margin-bottom:10px;
+            "
+        >
+            Select an unselected question number.
+            Scores are maintained manually.
+        </p>
+
+
+        <div
+            id="numbers-grid"
+            class="numbers-container"
+        >
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================================
+         VIEW 6 — QUESTION STAGE
+    ========================================================== -->
+
+    <section
+        id="view-stage"
+        class="view-section"
+    >
+
+        <div
+            style="
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                margin-bottom:20px;
+                flex-wrap:wrap;
+                gap:15px;
+            "
+        >
+
+            <span
+                id="stage-round-badge"
+                class="round-badge"
+                style="
+                    font-size:1.4rem;
+                    padding:10px 22px;
+                "
+            >
+                ROUND 1
+            </span>
+
+
+            <!-- TIMER -->
+
+            <div class="top-stage-timer">
+
+                <span
+                    style="
+                        font-size:1.2rem;
+                        color:var(--neon-cyan);
+                        letter-spacing:1px;
+                    "
+                >
+                    ⏱️ TIMER:
+                </span>
+
+
+                <span
+                    id="timer-display"
+                    class="top-timer-val"
+                >
+                    30
+                </span>
+
+            </div>
+
+
+
+            <!-- SOUND BUTTONS -->
+
+            <div
+                style="
+                    display:flex;
+                    align-items:center;
+                    gap:12px;
+                    flex-wrap:wrap;
+                "
+            >
+
+                <div class="soundboard">
+
+                    <button
+                        class="sound-btn"
+                        onclick="playSound('applause')"
+                    >
+                        🐒 Cheer
+                    </button>
+
+                    <button
+                        class="sound-btn"
+                        onclick="playSound('tada')"
+                    >
+                        🎺 Ta-Da!
+                    </button>
+
+                    <button
+                        class="sound-btn"
+                        onclick="playSound('wrong')"
+                    >
+                        ❌ Buzzer
+                    </button>
+
+                    <button
+                        class="sound-btn"
+                        onclick="playSound('funny')"
+                    >
+                        😂 Funny
+                    </button>
+
+                </div>
+
+
+                <button
+                    class="btn-primary btn-small"
+                    onclick="backToGrid()"
+                >
+                    ⬅ BACK TO GRID
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QUESTION BOX -->
+
+        <div class="question-box-full">
+
+
+            <div
+                id="stage-q-number"
+                style="
+                    font-family:'Orbitron',sans-serif;
+                    font-size:1.8rem;
+                    color:var(--neon-pink);
+                    margin-bottom:12px;
+                "
+            >
+                QUESTION #1
+            </div>
+
+
+            <div
+                id="funny-meme-quote"
+                class="funny-quote-box"
+            >
+                💡 "Brain cells loading..."
+            </div>
+
+
+            <div
+                id="stage-q-text"
+                class="question-text"
+            >
+                Loading question...
+            </div>
+
+
+
+            <!-- =================================================
+                 ROUND 3 CONTROL
+            ================================================== -->
+
+            <div
+                id="round3-controls"
+                style="
+                    display:none;
+                    margin-top:25px;
+                    margin-bottom:30px;
+                    text-align:center;
+                "
+            >
+
+                <div
+                    id="round3-scoring-notice"
+                    class="round3-notice"
+                >
+                    DIRECT ANSWER — CORRECT = 3 MARKS
+                </div>
+
+
+                <button
+                    id="round3-reveal-options"
+                    class="btn-primary round3-reveal-btn"
+                    onclick="revealRound3Options()"
+                >
+                    👁️ SHOW OPTIONS — 2 MARKS
+                </button>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 OPTIONS
+            ================================================== -->
+
+            <div
+                id="stage-options-grid"
+                class="options-grid"
+            >
+
+                <div
+                    class="option-card"
+                    onclick="selectOptionCard(0)"
+                >
+
+                    <span class="option-letter">
+                        A
+                    </span>
+
+                    <span class="opt-text">
+                        Option A
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="option-card"
+                    onclick="selectOptionCard(1)"
+                >
+
+                    <span class="option-letter">
+                        B
+                    </span>
+
+                    <span class="opt-text">
+                        Option B
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="option-card"
+                    onclick="selectOptionCard(2)"
+                >
+
+                    <span class="option-letter">
+                        C
+                    </span>
+
+                    <span class="opt-text">
+                        Option C
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="option-card"
+                    onclick="selectOptionCard(3)"
+                >
+
+                    <span class="option-letter">
+                        D
+                    </span>
+
+                    <span class="opt-text">
+                        Option D
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+
+<!-- =============================================================
+     MONKEY HOST
+============================================================== -->
+
+<div
+    id="monkey-container"
+    class="tree-branch-container"
+>
+
+    <div class="tree-branch">
+
+        <span
+            style="
+                font-size:2rem;
+                margin-top:10px;
+            "
+        >
+            🍃 🌿 🍃
+        </span>
+
+    </div>
+
+
+    <div class="vine"></div>
+
+
+    <div class="monkey-graphic-box">
+
+        <svg
+            class="monkey-svg"
+            viewBox="0 0 200 240"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+
+            <path
+                d="M 100 170 Q 40 220 20 170 Q 10 130 40 140"
+                stroke="#8B4513"
+                stroke-width="12"
+                stroke-linecap="round"
+                fill="none"
+            />
+
+
+            <circle
+                cx="45"
+                cy="85"
+                r="26"
+                fill="#8B4513"
+            />
+
+            <circle
+                cx="45"
+                cy="85"
+                r="16"
+                fill="#FFC0CB"
+            />
+
+
+            <circle
+                cx="155"
+                cy="85"
+                r="26"
+                fill="#8B4513"
+            />
+
+            <circle
+                cx="155"
+                cy="85"
+                r="16"
+                fill="#FFC0CB"
+            />
+
+
+            <ellipse
+                cx="100"
+                cy="95"
+                rx="60"
+                ry="50"
+                fill="#8B4513"
+            />
+
+
+            <path
+                d="M 60 80 Q 100 62 140 80 Q 148 122 100 132 Q 52 122 60 80 Z"
+                fill="#F4A460"
+            />
+
+
+            <ellipse
+                cx="80"
+                cy="85"
+                rx="12"
+                ry="15"
+                fill="#FFFFFF"
+            />
+
+            <ellipse
+                cx="120"
+                cy="85"
+                rx="12"
+                ry="15"
+                fill="#FFFFFF"
+            />
+
+
+            <ellipse
+                cx="80"
+                cy="85"
+                rx="6"
+                ry="8"
+                fill="#000000"
+            />
+
+            <ellipse
+                cx="120"
+                cy="85"
+                rx="6"
+                ry="8"
+                fill="#000000"
+            />
+
+
+            <circle
+                cx="77"
+                cy="81"
+                r="3"
+                fill="#FFFFFF"
+            />
+
+            <circle
+                cx="117"
+                cy="81"
+                r="3"
+                fill="#FFFFFF"
+            />
+
+
+            <ellipse
+                cx="100"
+                cy="102"
+                rx="7"
+                ry="5"
+                fill="#4A235A"
+            />
+
+
+            <path
+                d="M 80 114 Q 100 135 120 114 Z"
+                fill="#A93226"
+            />
+
+
+            <path
+                d="M 88 122 Q 100 132 112 122 Z"
+                fill="#F1948A"
+            />
+
+
+            <circle
+                cx="68"
+                cy="105"
+                r="6"
+                fill="#FF69B4"
+                opacity="0.6"
+            />
+
+            <circle
+                cx="132"
+                cy="105"
+                r="6"
+                fill="#FF69B4"
+                opacity="0.6"
+            />
+
+
+            <ellipse
+                cx="100"
+                cy="165"
+                rx="42"
+                ry="45"
+                fill="#8B4513"
+            />
+
+
+            <ellipse
+                cx="100"
+                cy="165"
+                rx="28"
+                ry="32"
+                fill="#F4A460"
+            />
+
+
+            <ellipse
+                cx="75"
+                cy="205"
+                rx="16"
+                ry="12"
+                fill="#8B4513"
+            />
+
+            <ellipse
+                cx="75"
+                cy="210"
+                rx="12"
+                ry="8"
+                fill="#F4A460"
+            />
+
+
+            <ellipse
+                cx="125"
+                cy="205"
+                rx="16"
+                ry="12"
+                fill="#8B4513"
+            />
+
+            <ellipse
+                cx="125"
+                cy="210"
+                rx="12"
+                ry="8"
+                fill="#F4A460"
+            />
+
+
+            <path
+                d="M 40 25 Q 25 55 42 85"
+                stroke="#8B4513"
+                stroke-width="12"
+                stroke-linecap="round"
+                fill="none"
+            />
+
+            <circle
+                cx="40"
+                cy="20"
+                r="9"
+                fill="#F4A460"
+            />
+
+
+            <path
+                d="M 160 25 Q 175 55 158 85"
+                stroke="#8B4513"
+                stroke-width="12"
+                stroke-linecap="round"
+                fill="none"
+            />
+
+            <circle
+                cx="160"
+                cy="20"
+                r="9"
+                fill="#F4A460"
+            />
+
+        </svg>
+
+    </div>
+
+
+    <div class="speech-bubble">
+
+        <span id="speech-text">
+            Hurry up guys!
+        </span>
+
+    </div>
+
+</div>
+
+
+
+<!-- =============================================================
+     SCRIPTS
+============================================================== -->
+
+<script src="questions.js"></script>
+
+<script src="app.js"></script>
+
+
+</body>
+</html>
